@@ -62,4 +62,20 @@ In the project directory, you can run:
 - Online payment integration for subscriptions  
 - Notifications & reminders for renewals  
 - Multi-language support (English/Arabic)
+## 📸 Screenshots
+### Welcome Page
+![Welcome](https://github.com/user-attachments/assets/e21aa071-76c0-4e34-af10-0df050a5c4f1)
+### Login
+![Login](https://github.com/user-attachments/assets/e94bc448-a91e-498d-9f60-04e09482e003)
+### Dashboard
+![Dashboard](https://github.com/user-attachments/assets/aee2c4a0-e45e-454e-8de5-fb1f8221874d)
+### AddUser
+![AddUser](https://github.com/user-attachments/assets/df31ff14-e945-439d-bb01-c0a6bff6da59)
+### UnitWorkePlace
+![UnitWorkPlace](https://github.com/user-attachments/assets/b1b8e89b-07d8-4579-b0a4-20b9b3b05e95)
+### WorkPlaces
+![WorkPlacses](https://github.com/user-attachments/assets/b012229b-e4c6-49d1-b014-200f490b6b6d)
+### AgePage
+![AgePage](https://github.com/user-attachments/assets/5a6ba9e9-c821-472b-80ac-a619a3f0925a)
+
 
