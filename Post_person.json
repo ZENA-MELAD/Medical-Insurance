@@ -1,0 +1,22 @@
+{
+        
+	"firstName": "maya",
+	"fatherName": "mh",
+	"lastName": "Alyos",
+	"motherName": "Hud",
+	"birthDate": null,
+	"nationalId": "10000",
+	"ensuranceNumber": "9999",
+	"address": "null",
+	"phone": "09998",
+	"subscrib": false,
+	"affiliate": false,
+	"beneficiary": false,
+	 "genderId": 2,
+
+	"EngineereId": 1,
+	 "PersonId": "0",
+	  
+	   "RelationTypeId": 1
+	   
+}

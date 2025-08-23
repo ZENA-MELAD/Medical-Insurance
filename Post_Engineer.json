@@ -1,0 +1,22 @@
+{
+        
+	"firstName": "Maz",
+	"fatherName": "Nas",
+	"lastName": "Alyosuef",
+	"motherName": "Hu",
+	"birthDate": null,
+	"nationalId": "9988",
+	"ensuranceNumber": "9999",
+	"address": "null",
+	"phone": "09998",
+	"subscrib": false,
+	"affiliate": false,
+	"beneficiary": false,
+	 "genderId": 1,
+	"EngNumber": "7654",
+	 "SubNumber": "1200",
+	  
+	   "statusId": 1,
+		 "SpecializationId": 1,
+		   "WorkPlaceId": 1
+}
