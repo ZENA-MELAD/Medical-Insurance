@@ -21,14 +21,15 @@ A modern web application built with React and Tailwind CSS that simplifies healt
 
 ---
 ## 📂 Project Structure
-medical-insurance-app/
-│
+medical-insurance-app:
+05-06-2024/
+
 ├── src/
-    ├──Assets/                       # static files such as images and data static
-│   ├── components/                  # Reusable components
-│   ├── pages/DashboardRouter/       # Application pages (AddUser,AddMember,Renewal, etc.)
-│   ├── Custom Hooks/                # Custom React hooks
-│   └── App.js                       # Main application file
+       ├──Assets/                       # static files such as images and data static
+│      ├── components/                  # Reusable components
+│      ├── pages/DashboardRouter/       # Application pages (AddUser,AddMember,etc.)
+│      ├── Custom Hooks/                # Custom React hooks
+│      └── App.js                       # Main application file
 │
 ├── package.json
 └── README.md
