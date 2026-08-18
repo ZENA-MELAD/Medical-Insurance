@@ -1,14 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { decryptData, encryptData } from "../../config/lib";
 
-import { __admin__, __user__ } from "./../../config/userAfterEncrypt";
+// import { __admin__, __user__ } from "./../../config/userAfterEncrypt";
 
 const getUserInfoFromLocal = () => {
-  if (sessionStorage.getItem("userInfo"))
-    return JSON.parse(decryptData(sessionStorage.getItem("userInfo")));
-  // else return { role: "guest", token: null };
-  else return JSON.parse(decryptData(__admin__));
-  // else return JSON.parse(decryptData(__user__));  
+  if (sessionStorage.getItem("userInfo")) {
+    return JSON.parse(
+      decryptData(sessionStorage.getItem("userInfo"))
+    );
+  }
+
+  return {
+    role: "guest",
+    token: null,
+    name: null,
+    id: null,
+    email: null,
+    phone: null,
+  };
 };
 
 export const authSlice = createSlice({
