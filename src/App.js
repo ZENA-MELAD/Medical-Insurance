@@ -7,7 +7,7 @@ import { changeLanguage } from "./lang";
 import { Suspense, lazy, useEffect } from "react";
 // import Testing_1 from "./pages/Testing/Testing_1";
 import { useSelector } from "react-redux";
-import Alert from "components/Alert/Alert";
+import Alert from "./components/Alert/Alert.jsx";
 import { Error401, Error404 } from "./pages/errors";
 import Login from "./pages/Login/Login";
 import Welcome from "./pages/Welcome/Welcome";
