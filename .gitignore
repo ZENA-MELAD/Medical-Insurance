@@ -5,7 +5,10 @@
 /.pnp
 .pnp.js
 
-/src/config
+/src/config/*
+!/src/config/
+!/src/config/layoutSizes.js
+
 /backups
 # testing
 /coverage
