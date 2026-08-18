@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 import Alert from "components/Alert/Alert";
 import { Error401, Error404 } from "./pages/errors";
 import Login from "./pages/Login/Login";
-import Welcome from "pages/Welcome/Welcome";
+import Welcome from "./pages/Welcome/Welcome";
 
 const DashboardRouter = lazy(() =>
   import("./pages/DashboardRouter/DashboardRouter")
