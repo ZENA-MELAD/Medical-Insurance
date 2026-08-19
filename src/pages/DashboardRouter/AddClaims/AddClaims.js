@@ -9,7 +9,7 @@ import usePost from "../../../Custom Hooks/usePost";
 // import { NavLink } from "react-router-dom";
 // import useGet2 from "Custom Hooks/useGet2";
 import axios from "axios";
-// import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../../components/Alert/Alert";
 import Back from "../../../components/Back/Back";
 import Quiries from "../../../components/Quiries/Quiries";
 
