@@ -7,8 +7,8 @@ import React, { useEffect, useRef, useState } from "react";
 // import { PiPlusCircle } from "react-icons/pi";
 import usePost from "../../../Custom Hooks/usePost";
 // import { NavLink } from "react-router-dom";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 import axios from "axios";
 
 const ManualClaims = () => {

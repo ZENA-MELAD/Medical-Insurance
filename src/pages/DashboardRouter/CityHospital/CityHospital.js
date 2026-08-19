@@ -19,8 +19,8 @@ import {
 } from "@mui/material";
 import { createAlert } from "../../../components/Alert/Alert";
 // import { NavLink } from "react-router-dom";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 
 const CityHospital = () => {
   const [city, setCity] = useState("");

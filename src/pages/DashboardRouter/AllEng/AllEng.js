@@ -24,9 +24,9 @@ import {
 // import Highlighter from "react-highlight-words";
 import axios from "axios";
 import moment from "moment";
-import { usePaginatedQuery } from "Custom Hooks/useGetData";
+import { usePaginatedQuery } from "../../../Custom Hooks/useGetData";
 import { Pagination, Stack } from "@mui/material";
-import BackButton from "components/BackButton/BackButton";
+import BackButton from "../../../components/BackButton/BackButton";
 import { NavLink } from "react-router-dom";
 
 const AllEng = () => {

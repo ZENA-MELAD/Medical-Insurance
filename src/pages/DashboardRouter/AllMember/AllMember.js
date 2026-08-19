@@ -25,7 +25,7 @@ import {
 import Highlighter from "react-highlight-words";
 import axios from "axios";
 import moment from "moment";
-import BackButton from "components/BackButton/BackButton";
+import BackButton from "../../../components/BackButton/BackButton";
 import { render } from "@testing-library/react";
 import { NavLink } from "react-router-dom";
 const AllMember = () => {

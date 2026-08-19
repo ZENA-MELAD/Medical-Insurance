@@ -19,9 +19,9 @@ import {
 } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
 import config from "../../../Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import useGet from "../../../Custom Hooks/useGet";
 import moment from "moment";
-import BackButton from "components/BackButton/BackButton";
+import BackButton from "../../../components/BackButton/BackButton";
 
 const AllClaims = () => {
   const [data10, setData10] = useState([]);

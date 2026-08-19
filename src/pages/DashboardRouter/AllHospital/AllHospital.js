@@ -19,7 +19,7 @@ import {
 } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
 import axios from "axios";
-import BackButton from "components/BackButton/BackButton";
+import BackButton from "../../../components/BackButton/BackButton";
 
 const AllHospital = () => {
   const [data10, loading] = useGet(config.hospitals);

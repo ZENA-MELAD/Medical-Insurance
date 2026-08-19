@@ -9,8 +9,8 @@ import { createAlert } from "../../../components/Alert/Alert";
 // import axios from "axios";
 
 // import { NavLink } from "react-router-dom";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 const UnitWorkPlace = () => {
   const [nameU, setNameU] = useState("");
   const [emailpresident, setEmailpresident] = useState("");

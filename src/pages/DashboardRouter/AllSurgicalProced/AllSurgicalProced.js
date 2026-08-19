@@ -14,7 +14,7 @@ import {
 } from "antd";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import BackButton from "components/BackButton/BackButton";
+import BackButton from "../../../components/BackButton/BackButton";
 
 const AllSurgicalProced = () => {
   const [data10, loading] = useGet(config.surgicalprocedures);
