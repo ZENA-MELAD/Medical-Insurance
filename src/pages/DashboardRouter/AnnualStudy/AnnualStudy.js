@@ -1,6 +1,6 @@
-import Back from "components/Back/Back";
+import Back from "../../../components/Back/Back";
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const AnnualStudy = () => {
   const [file, setFile] = useState(null);
