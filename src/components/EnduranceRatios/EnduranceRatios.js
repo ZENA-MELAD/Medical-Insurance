@@ -57,10 +57,10 @@ const EnduranceRatios = ({year,cardPrice}) => {
         inputRef4.current.placeholder=""
       }
     } else {
-      if (name == "price") 
+      if (name === "price") 
         inputRef2.current.placeholder = "الرجاء ادخال أرقام فقط";
       
-      if (name == "ceiling") 
+      if (name === "ceiling") 
         inputRef5.current.placeholder = "الرجاء ادخال أرقام فقط";
       
       if (name === "in") 

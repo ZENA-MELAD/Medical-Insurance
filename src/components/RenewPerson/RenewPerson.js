@@ -2,7 +2,7 @@
 import { Spin } from "antd";
 import DatePicker from "react-datepicker";
 import axios from "axios";
-import { createAlert } from "lert/Alert";
+import { createAlert } from "../Alert/Alert";
 import config from "../../Constants/environment";
 import React, {  useState } from "react";
 // import { json } from "react-router-dom";

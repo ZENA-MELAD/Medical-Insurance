@@ -1,10 +1,10 @@
 import { Button, Spin, Table } from "antd";
 import axios from "axios";
-import { createAlert } from "../../components/Alert/Alert";
+import { createAlert } from "../Alert/Alert";
 import config from "../../Constants/environment";
 import React, { useEffect, useRef, useState } from "react";
 import { DeleteOutlined } from "@ant-design/icons";
-import relative from "Assets/Data/relative";
+import relative from "../../Assets/Data/relative";
 import { FormControl, Select, InputLabel, MenuItem } from "@mui/material";
 const RelationTypes = ({ year, cardPrice }) => {
   // const inputRef1 = useRef(null);

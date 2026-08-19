@@ -1,7 +1,7 @@
 import React from "react";
 import { CgMenuLeft } from "react-icons/cg";
-import { FiBell } from "react-icons/fi";
-import logo from "./../../../Assets/Images/photo_2024-05-15_11-32-10.jpg";
+// import { FiBell } from "react-icons/fi";
+import logo from "../../../Assets/Images/photo_2024-05-15_11-32-10.jpg";
 
 export default function Navbar({ action }) {
   return (
@@ -19,7 +19,7 @@ export default function Navbar({ action }) {
             <h3 className="text-sm text-center">فرع حمص</h3>
           </div>
           <div className="w-10 mr-2">
-            <img src={logo} className="w-full" />
+            <img src={logo} className="w-full"  alt=""/>
           </div>
         </div>
       </h1>
