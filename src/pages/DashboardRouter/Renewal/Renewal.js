@@ -12,7 +12,7 @@ import AllMemberR from "../AllMemberR/AllMemberR";
 
 import RenewEngineer from "../../../components/RenewEngineer/RenewEngineer";
 import Fee from "components/Fee/Fee";
-import { createAlert } from "lert/Alert";
+import { createAlert } from "../../../components/Alert/Alert";
 
 const Renewal = () => {
   const location = useLocation();
