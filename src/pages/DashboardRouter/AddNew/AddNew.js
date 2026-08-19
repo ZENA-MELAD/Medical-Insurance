@@ -13,12 +13,12 @@ import {
 } from "@mui/material";
 // import { AiOutlinePercentage } from "react-icons/ai";
 // import { PiPlusCircle } from "react-icons/pi";
-import usePost from "Custom Hooks/usePost";
+import usePost from "../../../Custom Hooks/usePost";
 // import paymethod from "Assets/Data/paymethod";
-import Back from "components/Back/Back";
+import Back from "../../../components/Back/Back";
 import axios from "axios";
 import { Spin } from "antd";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../../components/Alert/Alert";
 
 const AddNew = () => {
   const [nameEng1, setNameEng1] = useState("");

@@ -1,6 +1,6 @@
 import { Button, Spin, Table } from "antd";
 import axios from "axios";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../components/Alert/Alert";
 import config from "../../Constants/environment";
 import React, { useEffect, useRef, useState } from "react";
 import { DeleteOutlined } from "@ant-design/icons";

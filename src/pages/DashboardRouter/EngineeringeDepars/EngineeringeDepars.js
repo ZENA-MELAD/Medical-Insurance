@@ -6,8 +6,8 @@ import React, { useEffect, useRef, useState } from "react";
 import usePost from "../../../Custom Hooks/usePost";
 import config from "../../../Constants/environment";
 // import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import useGet from "Custom Hooks/useGet";
-import { createAlert } from "components/Alert/Alert";
+// import useGet from "Custom Hooks/useGet";
+import { createAlert } from "../../../components/Alert/Alert";
 // import { NavLink } from "react-router-dom";
 import Back from "components/Back/Back";
 import Quiries from "components/Quiries/Quiries";
@@ -15,7 +15,7 @@ import Quiries from "components/Quiries/Quiries";
 const EngineeringeDepars = () => {
   const inputRef = useRef(null);
   const inputRef1 = useRef(null);
-  const [depart, setDepart] = useState("");
+  // const [depart, setDepart] = useState("");
   const [name, setName] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const handleKeyDown = (e, nextRef) => {

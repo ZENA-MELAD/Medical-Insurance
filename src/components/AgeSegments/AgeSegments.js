@@ -1,5 +1,5 @@
 import axios from "axios";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../components/Alert/Alert";
 import config from "../../Constants/environment";
 import { Spin, Table, Button } from 'antd'; // استيراد Spin وجدول وأزرار من ant design
 import { DeleteOutlined } from '@ant-design/icons'; // استيراد أيقونة الحذف

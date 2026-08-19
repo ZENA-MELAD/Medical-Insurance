@@ -6,10 +6,10 @@ import useGet from "../../../Custom Hooks/useGet";
 import usePost from "../../../Custom Hooks/usePost";
 // import { PiPlusCircle } from "react-icons/pi";
 // import { IoIosSearch } from "react-icons/io";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../../components/Alert/Alert";
 // import { NavLink } from "react-router-dom";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 import { Spin } from "antd";
 
 const WorkPlaces = () => {

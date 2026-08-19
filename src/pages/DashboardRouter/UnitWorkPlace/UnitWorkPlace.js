@@ -1,14 +1,14 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import { IoIosSearch } from "react-icons/io";
-import { PiPlusCircle } from "react-icons/pi";
+// import { IoIosSearch } from "react-icons/io";
+// import { PiPlusCircle } from "react-icons/pi";
 import usePost from "../../../Custom Hooks/usePost";
 import config from "../../../Constants/environment";
 import useGet from "../../../Custom Hooks/useGet";
-import { createAlert } from "components/Alert/Alert";
-import axios from "axios";
+import { createAlert } from "../../../components/Alert/Alert";
+// import axios from "axios";
 
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Back from "components/Back/Back";
 import Quiries from "components/Quiries/Quiries";
 const UnitWorkPlace = () => {

@@ -1,27 +1,24 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import Arrow from "../../../Assets/Images/photo_2024-05-20_13-51-33.jpg";
-import { IoIosSearch } from "react-icons/io";
+// import Arrow from "../../../Assets/Images/photo_2024-05-20_13-51-33.jpg";
+// import { IoIosSearch } from "react-icons/io";
 import config from "../../../Constants/environment";
 import usePost from "../../../Custom Hooks/usePost";
-import { PiPlusCircle } from "react-icons/pi";
+// import { PiPlusCircle } from "react-icons/pi";
 import useGet from "../../../Custom Hooks/useGet";
-import cities from "Assets/Data/cities";
-import { Input, Radio, Space } from "antd";
+// import cities from "Assets/Data/cities";
+// import { Input, Radio, Space } from "antd";
 import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
+
+  
   FormControl,
-  IconButton,
+  
   InputLabel,
   MenuItem,
   Select,
 } from "@mui/material";
-import { createAlert } from "components/Alert/Alert";
-import { NavLink } from "react-router-dom";
+import { createAlert } from "../../../components/Alert/Alert";
+// import { NavLink } from "react-router-dom";
 import Back from "components/Back/Back";
 import Quiries from "components/Quiries/Quiries";
 

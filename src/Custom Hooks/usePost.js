@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import config from "../Constants/environment";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../components/Alert/Alert";
 
 const usePost = (endPoint, Body) => {
   const [loading, setLoading] = useState(false);

@@ -5,9 +5,9 @@ import axios from "axios";
 import config from "../../../../Constants/environment";
 import { useEffect, useState } from "react";
 import { Spinner } from "components";
-import ActionModal from "components/ActionModal/ActionModal";
+import ActionModal from "../../../../components/ActionModal/ActionModal";
 // import { create } from "@mui/material/styles/createTransitions";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../../../components/Alert/Alert";
 
 const AgePage = () => {
   const [reloadPage, setReloadPage] = useState(0);

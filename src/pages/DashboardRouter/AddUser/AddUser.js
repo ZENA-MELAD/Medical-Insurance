@@ -3,19 +3,19 @@ import React, { useEffect, useRef, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import gender3 from "Assets/Data/gender";
+import gender3 from "../../../Assets/Data/gender";
 import useGet from "../../../Custom Hooks/useGet";
 import config from "../../../Constants/environment";
 
-import status2 from "Assets/Data/status";
-import { NavLink, useNavigate } from "react-router-dom";
+import status2 from "../../../Assets/Data/status";
+import { NavLink} from "react-router-dom";
 import axios from "axios";
-import { createAlert } from "components/Alert/Alert";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import { createAlert } from "../../../components/Alert/Alert";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 import { BsFillSendFill } from "react-icons/bs";
 import moment from "moment";
-import { usePaginatedQuery } from "Custom Hooks/useGetData";
+import { usePaginatedQuery } from "../../../Custom Hooks/useGetData";
 import { Spin } from "antd";
 const AddUser = () => {
   const [gender, setGender] = useState("");

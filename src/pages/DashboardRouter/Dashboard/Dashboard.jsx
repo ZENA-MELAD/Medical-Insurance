@@ -1,7 +1,7 @@
-import { createAlert } from "components/Alert/Alert";
-import NavigationCard from "components/NavigationCard/NavigationCard";
-import { useEffect } from "react";
-import { FaRegSmile } from "react-icons/fa";
+// import { createAlert } from "../../../components/Alert/Alert";
+import NavigationCard from "../../../components/NavigationCard/NavigationCard";
+// import { useEffect } from "react";
+// import { FaRegSmile } from "react-icons/fa";
 import { LuLayoutDashboard } from "react-icons/lu";
 
 const listLinks = [

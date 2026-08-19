@@ -3,15 +3,15 @@ import gender3 from "../../../Assets/Data/gender";
 import React, { useEffect, useRef, useState } from "react";
 import statusR from "../../../Assets/Data/statusrelativee";
 import config from "../../../Constants/environment";
-import useGet from "../../../Custom Hooks/useGet";
-import { createAlert } from "components/Alert/Alert";
+// import useGet from "../../../Custom Hooks/useGet";
+import { createAlert } from "../../../components/Alert/Alert";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 import axios from "axios";
 import { BsFillSendFill } from "react-icons/bs";
-import { usePaginatedQuery } from "Custom Hooks/useGetData";
+import { usePaginatedQuery } from "../../../Custom Hooks/useGetData";
 import moment from "moment";
 const AddMember = () => {
   const [statusb, setStatusb] = useState("");
@@ -36,8 +36,8 @@ const AddMember = () => {
   const [fileName, setFileName] = useState("");
   const [engData, setEngData] = useState("");
 
-  const [relationYear, loadingYear] = useState();
-  const [file, setFile] = useState();
+  // const [relationYear, loadingYear] = useState();
+  // const [file, setFile] = useState();
   const [error3, setError3] = useState("");
   const [error4, setError4] = useState("");
   const [error5, setError5] = useState("");

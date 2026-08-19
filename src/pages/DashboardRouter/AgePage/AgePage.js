@@ -1,12 +1,12 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import React, { useState } from "react";
-import Back from "components/Back/Back";
-import AgeSegments from "components/AgeSegments/AgeSegments";
-import RelationTypes from "components/RelationTypes/RelationTypes";
-import Hospitals from "components/Hospitals/Hospitals";
-import EnduranceRatios from "components/EnduranceRatios/EnduranceRatios";
-import Collapse from "components/Collapse/Collapse";
+import Back from "../../../components/Back/Back";
+import AgeSegments from "../../../components/AgeSegments/AgeSegments";
+import RelationTypes from "../../../components/RelationTypes/RelationTypes";
+import Hospitals from "../../../components/Hospitals/Hospitals";
+import EnduranceRatios from "../../../components/EnduranceRatios/EnduranceRatios";
+import Collapse from "../../../components/Collapse/Collapse";
 
 const AgePage = () => {
   const [cardPrice, setCardPrice] = useState("");

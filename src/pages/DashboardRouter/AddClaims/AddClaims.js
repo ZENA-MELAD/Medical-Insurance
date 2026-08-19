@@ -2,16 +2,16 @@ import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import config from "../../../Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import useGet from "../../../Custom Hooks/useGet";
 import React, { useEffect, useRef, useState } from "react";
 // import { PiPlusCircle } from "react-icons/pi";
-import usePost from "Custom Hooks/usePost";
+import usePost from "../../../Custom Hooks/usePost";
 // import { NavLink } from "react-router-dom";
 // import useGet2 from "Custom Hooks/useGet2";
 import axios from "axios";
 // import { createAlert } from "components/Alert/Alert";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 
 const AddClaims = () => {
   const [dataH] = useGet(config.hospitals);

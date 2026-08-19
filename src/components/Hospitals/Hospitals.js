@@ -7,7 +7,7 @@ import {
   Select,
 } from "@mui/material";
 import axios from "axios";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../../components/Alert/Alert";
 import config from "../../Constants/environment";
 import useGet from "Custom Hooks/useGet";
 import React, { useEffect, useRef, useState } from "react";
