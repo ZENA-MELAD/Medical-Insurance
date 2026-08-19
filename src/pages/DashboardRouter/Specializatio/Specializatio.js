@@ -1,15 +1,15 @@
 
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
-import usePost from "Custom Hooks/usePost";
-import { IoIosSearch } from "react-icons/io";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
+import usePost from "../../../Custom Hooks/usePost";
+// import { IoIosSearch } from "react-icons/io";
 import React, { useRef, useState, useEffect } from "react";
-import { createAlert } from "lert/Alert";
-import { NavLink } from "react-router-dom";
-import { PiPlusCircle } from "react-icons/pi";
-import Back from "components/Back/Back";
-import Quiries from "components/Quiries/Quiries";
+import { createAlert } from "../../../components/Alert/Alert";
+// import { NavLink } from "react-router-dom";
+// import { PiPlusCircle } from "react-icons/pi";
+import Back from "../../../components/Back/Back";
+import Quiries from "../../../components/Quiries/Quiries";
 
 const Specializatio = () => {
   const [depart, setDepart] = useState("");
