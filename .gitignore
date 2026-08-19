@@ -8,6 +8,7 @@
 /src/config/*
 !/src/config/
 !/src/config/layoutSizes.js
+!/src/config/lib.js
 
 /backups
 # testing
