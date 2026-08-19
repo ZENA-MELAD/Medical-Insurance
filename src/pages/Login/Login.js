@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { LuUser2 } from "react-icons/lu";
 import { GoKey } from "react-icons/go";
 import LoginImage from "../../Assets/Images/rafiki.png";
-import config from "../../Constants/environment";
-import usePost from "../../Custom Hooks/usePost";
-import { NavLink, useNavigate } from "react-router-dom";
+// import config from "../../Constants/environment";
+// import usePost from "../../Custom Hooks/usePost";
+import {  useNavigate } from "react-router-dom";
 import axios from "axios";
 const Login = () => {
   const [userName, setUserName] = useState();

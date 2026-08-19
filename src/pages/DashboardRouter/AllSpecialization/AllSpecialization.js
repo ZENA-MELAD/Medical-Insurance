@@ -1,5 +1,5 @@
 import config from "../../../Constants/environment";
-import useGet from "../../../";
+import useGet from "../../../Custom Hooks/useGet";
 import {
   Button,
   Input,

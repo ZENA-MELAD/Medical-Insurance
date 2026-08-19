@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { RiArrowDropLeftFill, RiArrowDropRightFill } from "react-icons/ri";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import sitemap from "../../config/siteMap";
+import sitemap from "../../config/siteMap.json";
 import { Button, Input, Form } from "antd";
 import axios from "axios";
 import { createAlert } from "../Alert/Alert";

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Logo from "../../Assets/Images/photo_2024-05-15_11-32-10.jpg";
 import "./Welcome.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 const Welcome = () => {
   const navigate = useNavigate();
 
