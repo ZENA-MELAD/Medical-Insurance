@@ -1,7 +1,7 @@
 import { Table, Checkbox } from "antd";
 import axios from "axios";
-import BackButton from "components/BackButton/BackButton";
-import config from "Constants/environment";
+import BackButton from "../../../components/BackButton/BackButton";
+import config from "../../../Constants/environment";
 import React, { useEffect, useState } from "react";
 
 const RenewTest = ({engNumber}) => {
