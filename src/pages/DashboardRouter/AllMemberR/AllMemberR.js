@@ -2,7 +2,7 @@
 import { Button, Modal, Space, Table } from "antd";
 import axios from "axios";
 import config from "../../../Constants/environment";
-// import useGet from "Custom Hooks/useGet";
+// import useGet from "";
 import React, { useEffect, useState } from "react";
 import AllRenewallR from "../AllRenewallR/AllRenewallR";
 import RenewPerson from "../../../components/RenewPerson/RenewPerson";
