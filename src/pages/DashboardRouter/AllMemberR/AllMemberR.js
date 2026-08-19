@@ -5,7 +5,7 @@ import config from "../../../Constants/environment";
 // import useGet from "Custom Hooks/useGet";
 import React, { useEffect, useState } from "react";
 import AllRenewallR from "../AllRenewallR/AllRenewallR";
-import RenewPerson from "components/RenewPerson/RenewPerson";
+import RenewPerson from "../../../components/RenewPerson/RenewPerson";
 
 const AllMemberR = ({ engNumber, engId }) => {
   const [modalData2, setModalData2] = useState(null); // تخزين بيانات العنصر الحالي
