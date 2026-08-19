@@ -9,7 +9,7 @@ import {
   DeleteOutlined,
   EditOutlined,
 } from "@ant-design/icons";
-import useGet from "Custom Hooks/useGet";
+import useGet from "../../../Custom Hooks/useGet";
 const SearchRE = () => {
   const [number2, setNumber2] = useState("");
   const [number, setNumber] = useState("");
