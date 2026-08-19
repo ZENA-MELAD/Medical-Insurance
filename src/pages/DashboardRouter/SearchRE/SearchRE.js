@@ -1,11 +1,11 @@
-import { Button, Input, notification, Popconfirm, Space, Table } from "antd";
+import { Button,  notification, Popconfirm, Space, Table } from "antd";
 import axios from "axios";
-import config from "Constants/environment";
+import config from "../../../Constants/environment";
 import moment from "moment";
-import React, { useEffect, useRef, useState } from "react";
-import { Form, NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import {
-  SearchOutlined,
+  
   DeleteOutlined,
   EditOutlined,
 } from "@ant-design/icons";
@@ -20,9 +20,9 @@ const SearchRE = () => {
   //   const [form] = Form.useForm();
   //   const [form2] = Form.useForm();
   const [engineerId, setEngineerId] = useState("");
-  const [isModalVisibleFile, setIsModalVisibleFile] = useState(false);
+  // const [isModalVisibleFile, setIsModalVisibleFile] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [relationName, setRelationName] = useState("");
+  // const [relationName, setRelationName] = useState("");
   const [data11, loading2] = useGet(config.workplaces);
   const [data13, loading223] = useGet(config.specializations);
   useEffect(() => {
