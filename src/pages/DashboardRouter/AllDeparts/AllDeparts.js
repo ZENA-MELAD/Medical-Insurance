@@ -1,13 +1,13 @@
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
 import { Button, Input, Popconfirm, Space, Table, Modal, Form, notification } from "antd";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import {
-  SearchOutlined,
+ 
   DeleteOutlined,
   EditOutlined,
 } from "@ant-design/icons";
-import Highlighter from "react-highlight-words";
+// import Highlighter from "react-highlight-words";
 import axios from "axios";
 
 const AllDeparts = () => {

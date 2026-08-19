@@ -35,8 +35,8 @@ const AddNewPerson = () => {
   const [address, setAddress] = useState();
   const [mobile, setMobile] = useState();
   const [phone, setPhone] = useState();
-  const [dataw, loadingW] = useGet(config.persons);
-  const [data4, loading555] = useGet(config.engineers);
+  // const [dataw, loadingW] = useGet(config.persons);
+  const [data4] = useGet(config.engineers);
   const [dataId, setDataId] = useState();
   const [dataId2, setDataId21] = useState();
   const [nationalId, setNationalId] = useState();
@@ -48,7 +48,7 @@ const AddNewPerson = () => {
       setDataId21(dataId + 1);
     }
   }, [data4 && data4.length]);
-  const [loading, postFunc] = usePost(config.persons, {
+  const [ postFunc] = usePost(config.persons, {
     firstName: firstName,
     fatherName: fatherName,
     lastName: lastName,

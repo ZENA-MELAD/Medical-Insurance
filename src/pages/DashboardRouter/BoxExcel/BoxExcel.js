@@ -1,6 +1,6 @@
-import Back from 'components/Back/Back'
-import PaymentMethods from 'components/PaymentMethods/PaymentMethods'
-import config from 'Constants/environment'
+import Back from '../../../components/Back/Back'
+import PaymentMethods from '../../../components/PaymentMethods/PaymentMethods'
+import config from '../../../Constants/environment'
 import React from 'react'
 
 const BoxExcel = () => {

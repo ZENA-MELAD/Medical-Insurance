@@ -1,8 +1,8 @@
 
 import { Button, Modal, Space, Table } from "antd";
 import axios from "axios";
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import config from "../../../Constants/environment";
+// import useGet from "Custom Hooks/useGet";
 import React, { useEffect, useState } from "react";
 import AllRenewallR from "../AllRenewallR/AllRenewallR";
 import RenewPerson from "components/RenewPerson/RenewPerson";
@@ -57,17 +57,17 @@ const AllMemberR = ({ engNumber, engId }) => {
           gender: item.person.genderId === 1 ? "ذكر" : "أنثى",
           status: item.person.statusId === 1 ? "متزوج" : "عازب",
           relationT:
-          item.relationTypeId == 1
+          item.relationTypeId === 1
             ? "أب"
-            : item.relationTypeId == 2
+            : item.relationTypeId === 2
             ? "أم"
-            : item.relationTypeId == 3
+            : item.relationTypeId === 3
             ? "زوج"
-            : item.relationTypeId == 4
+            : item.relationTypeId === 4
             ? "زوجة"
-            : item.relationTypeId == 5
+            : item.relationTypeId === 5
             ? "ابن"
-            : item.relationTypeId == 6
+            : item.relationTypeId === 6
             ? "ابنة"
             : "غير معروف" // قيمة افتراضية في حال لم تتطابق أي من الحالات السابقة
         
@@ -86,7 +86,7 @@ const AllMemberR = ({ engNumber, engId }) => {
       setData1(formattedData);
     }
   }, [data10]);
-  const [selectedEngineer, setSelectedEngineer] = useState(null);
+  // const [selectedEngineer, setSelectedEngineer] = useState(null);
   const [activeTable, setActiveTable] = useState({});
   const [activeButton1, setActiveButton1] = useState(null);
   const [activeButton2, setActiveButton2] = useState(null);
@@ -121,7 +121,7 @@ const AllMemberR = ({ engNumber, engId }) => {
   
   console.log("bbbbbbbbbbbb", idPerson);
   const [activeRenewPersonButton, setActiveRenewPersonButton] = useState(null);
-  const [showRenewPerson, setShowRenewPerson] = useState("");
+  // const [showRenewPerson, setShowRenewPerson] = useState("");
 
 
 const toggleRenewPerson = (record) => {

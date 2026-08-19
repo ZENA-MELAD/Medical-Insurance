@@ -18,10 +18,10 @@ import {
   EditOutlined,
 } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
-import moment from "moment";
-import BackButton from "components/BackButton/BackButton";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
+// import moment from "moment";
+import BackButton from "../../../components/BackButton/BackButton";
 
 const AllClaimsManual = () => {
   const [data10, setData10] = useState([]);

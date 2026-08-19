@@ -1,5 +1,5 @@
-import axios, { all } from "axios";
-import config from "Constants/environment";
+import axios from "axios";
+import config from "../Constants/environment";
 import { useEffect, useState } from "react";
 
 const useGet2 = (endPoint, initialPageSize = 10) => {

@@ -1,20 +1,20 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import config from "Constants/environment";
+import config from "../../../Constants/environment";
 import useGet from "Custom Hooks/useGet";
-import useGet2 from "Custom Hooks/useGet2";
+// import useGet2 from "Custom Hooks/useGet2";
 import React, { useEffect, useRef, useState } from "react";
 import {
   FormControl,
   InputLabel,
   MenuItem,
   Select,
-  Button,
+
 } from "@mui/material";
-import { AiOutlinePercentage } from "react-icons/ai";
-import { PiPlusCircle } from "react-icons/pi";
+// import { AiOutlinePercentage } from "react-icons/ai";
+// import { PiPlusCircle } from "react-icons/pi";
 import usePost from "Custom Hooks/usePost";
-import paymethod from "Assets/Data/paymethod";
+// import paymethod from "Assets/Data/paymethod";
 import Back from "components/Back/Back";
 import axios from "axios";
 import { Spin } from "antd";
@@ -25,15 +25,15 @@ const AddNew = () => {
   const [nameR, setNameR] = useState("");
   // const [data4b, loading7b] = useGet2(config.engineers);
   // const [data3b, loading6b] = useGet2(config.persons);
-  const [dataw, loadingW] = useGet(config.workplaces);
-  const [dataU, loadingU] = useGet(config.engineeringunits);
-  const [dataP, loadingp] = useGet(config.paymethod);
+  const [dataw] = useGet(config.workplaces);
+  const [dataU] = useGet(config.engineeringunits);
+  const [dataP] = useGet(config.paymethod);
   const [number, setNumber] = useState("");
   const [number2, setNumber2] = useState("");
   const [error2, setError2] = useState("");
-  const [error3, setError3] = useState("");
-  const [work, setWork] = useState("");
-  const [unit, setUnit] = useState("");
+  // const [error3, setError3] = useState("");
+  // const [work, setWork] = useState("");
+  // const [unit, setUnit] = useState("");
   const [unitId, setUnitId] = useState();
   const [selectedDate, setSelectedDate] = useState(null);
   const [workPlaceId, setWorkPlaceId] = useState();

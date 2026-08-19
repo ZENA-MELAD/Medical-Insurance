@@ -1,5 +1,5 @@
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
 
 import {
   Button,
@@ -17,11 +17,11 @@ import {
 } from "antd";
 import React, { useState, useRef, useEffect } from "react";
 import {
-  SearchOutlined,
+
   DeleteOutlined,
   EditOutlined,
 } from "@ant-design/icons";
-import Highlighter from "react-highlight-words";
+// import Highlighter from "react-highlight-words";
 import axios from "axios";
 import moment from "moment";
 import { usePaginatedQuery } from "Custom Hooks/useGetData";
@@ -139,11 +139,11 @@ const AllEng = () => {
       setData(formattedData);
     }
   }, [d1, data11, data13]);
-  const handleSearch = (selectedKeys, confirm, dataIndex) => {
-    confirm();
-    setSearchText(selectedKeys[0]);
-    setSearchedColumn(dataIndex);
-  };
+  // const handleSearch = (selectedKeys, confirm, dataIndex) => {
+  //   confirm();
+  //   setSearchText(selectedKeys[0]);
+  //   setSearchedColumn(dataIndex);
+  // };
 
   const handleReset = (clearFilters) => {
     clearFilters();
@@ -225,23 +225,23 @@ const AllEng = () => {
   //     ),
   // });
 
-  const showEditFileModal = (record) => {
-    console.log("Record passed to showEditModalFile:", record);
+  // const showEditFileModal = (record) => {
+  //   console.log("Record passed to showEditModalFile:", record);
 
-    const images = record.images || []; // Assuming record has an 'images' array
-    const files = record.files || []; // Assuming record has a 'files' array
+  //   const images = record.images || []; // Assuming record has an 'images' array
+  //   const files = record.files || []; // Assuming record has a 'files' array
 
-    setEditingUnit(record);
-    setIsModalVisibleFile(true);
+  //   setEditingUnit(record);
+  //   setIsModalVisibleFile(true);
 
-    // Set initial values for the form
-    form.setFieldsValue({
-      images: images,
-      files: files,
-    });
+  //   // Set initial values for the form
+  //   form.setFieldsValue({
+  //     images: images,
+  //     files: files,
+  //   });
 
-    console.log("Form values after setting:", form.getFieldsValue());
-  };
+  //   console.log("Form values after setting:", form.getFieldsValue());
+  // };
 
   const handleOk = () => {
     // Logic to handle the updated data
@@ -570,53 +570,53 @@ const AllEng = () => {
         console.log("Validate Failed:", info);
       });
   };
-  const handleEditFile = () => {
-    form.validateFields().then((values) => {
-      const formData = new FormData();
+  // const handleEditFile = () => {
+  //   form.validateFields().then((values) => {
+  //     const formData = new FormData();
 
-      if (values.image && values.image.length > 0) {
-        formData.append("Images", values.image[0].originFileObj); // تأكد من أخذ الملف الأصلي
-      }
+  //     if (values.image && values.image.length > 0) {
+  //       formData.append("Images", values.image[0].originFileObj); // تأكد من أخذ الملف الأصلي
+  //     }
 
-      if (values.file && values.file.length > 0) {
-        formData.append("Words", values.file[0].originFileObj); // تأكد من أخذ الملف الأصلي
-      }
+  //     if (values.file && values.file.length > 0) {
+  //       formData.append("Words", values.file[0].originFileObj); // تأكد من أخذ الملف الأصلي
+  //     }
 
-      axios
-        .put(
-          `${config.baseUrl1}/${config.engineers}/${editingUnit.id}/${config.updateImageWord}`,
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        )
-        .then(() => {
-          notification.success({
-            message: "تم التعديل بنجاح",
-            description: `تم تعديل المرفقات`,
-          });
-          setIsModalVisibleFile(false);
-          setData((prevData) =>
-            prevData.map((item) =>
-              item.id === editingUnit.id
-                ? { ...item, image: values.image, file: values.file }
-                : item
-            )
-          );
-          setEditingUnit(null);
-          form.resetFields();
-        })
-        .catch((err) => {
-          notification.error({
-            message: "خطأ في التعديل",
-            description: "حدث خطأ أثناء تعديل المرفقات",
-          });
-          console.error(err);
-        });
-    });
-  };
+  //     axios
+  //       .put(
+  //         `${config.baseUrl1}/${config.engineers}/${editingUnit.id}/${config.updateImageWord}`,
+  //         formData,
+  //         {
+  //           headers: {
+  //             "Content-Type": "multipart/form-data",
+  //           },
+  //         }
+  //       )
+  //       .then(() => {
+  //         notification.success({
+  //           message: "تم التعديل بنجاح",
+  //           description: `تم تعديل المرفقات`,
+  //         });
+  //         setIsModalVisibleFile(false);
+  //         setData((prevData) =>
+  //           prevData.map((item) =>
+  //             item.id === editingUnit.id
+  //               ? { ...item, image: values.image, file: values.file }
+  //               : item
+  //           )
+  //         );
+  //         setEditingUnit(null);
+  //         form.resetFields();
+  //       })
+  //       .catch((err) => {
+  //         notification.error({
+  //           message: "خطأ في التعديل",
+  //           description: "حدث خطأ أثناء تعديل المرفقات",
+  //         });
+  //         console.error(err);
+  //       });
+  //   });
+  // };
 
   const [bordered, setBordered] = useState(false);
   const [size, setSize] = useState("large");

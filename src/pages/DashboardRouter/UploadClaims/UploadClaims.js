@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import config from "Constants/environment";
+import config from "../../../Constants/environment";
 import { NavLink } from "react-router-dom";
-import Back from "components/Back/Back";
+import Back from "../../../components/Back/Back";
 
 const UploadClaims = () => {
   const [file, setFile] = useState();

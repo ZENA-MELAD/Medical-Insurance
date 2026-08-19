@@ -1,13 +1,13 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
-import usePost from "Custom Hooks/usePost";
-import { PiPlusCircle } from "react-icons/pi";
-import { IoIosSearch } from "react-icons/io";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
+import usePost from "../../../Custom Hooks/usePost";
+// import { PiPlusCircle } from "react-icons/pi";
+// import { IoIosSearch } from "react-icons/io";
 import { createAlert } from "components/Alert/Alert";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Back from "components/Back/Back";
 import Quiries from "components/Quiries/Quiries";
 import { Spin } from "antd";
@@ -32,7 +32,7 @@ const WorkPlaces = () => {
   };
 
   const [dataW, loading4hh4] = useGet(config.engineeringunits);
-  const [dataWw, loading4hh44] = useGet(config.workplaces);
+  // const [dataWw, loading4hh44] = useGet(config.workplaces);
 
   const idWork =
     dataW &&

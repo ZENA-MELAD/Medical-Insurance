@@ -1,37 +1,37 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import config from "Constants/environment";
+import config from "../../../Constants/environment";
 import useGet from "Custom Hooks/useGet";
 import React, { useEffect, useRef, useState } from "react";
-import { PiPlusCircle } from "react-icons/pi";
+// import { PiPlusCircle } from "react-icons/pi";
 import usePost from "Custom Hooks/usePost";
-import { NavLink } from "react-router-dom";
-import useGet2 from "Custom Hooks/useGet2";
+// import { NavLink } from "react-router-dom";
+// import useGet2 from "Custom Hooks/useGet2";
 import axios from "axios";
-import { createAlert } from "components/Alert/Alert";
+// import { createAlert } from "components/Alert/Alert";
 import Back from "components/Back/Back";
 import Quiries from "components/Quiries/Quiries";
 
 const AddClaims = () => {
-  const [dataH, loading] = useGet(config.hospitals);
-  const [dataS, loading2] = useGet(config.surgicalprocedures);
+  const [dataH] = useGet(config.hospitals);
+  const [dataS] = useGet(config.surgicalprocedures);
   const [hospital, setHospital] = useState("");
   const [surgical, setSurgical] = useState("");
-  const [loginDate, setLoginDate] = useState(null);
-  const [exitDate, setExitDate] = useState(null);
+  // const [loginDate, setLoginDate] = useState(null);
+  // const [exitDate, setExitDate] = useState(null);
   const [surgicalDate, setSurgicalDate] = useState(null);
-  const [count, setCount] = useState();
-  const [count1, setCount1] = useState();
+  // const [count, setCount] = useState();
+  // const [count1, setCount1] = useState();
   const [bookNumber, setBookNumber] = useState("");
   const [recoveryNum, setRecoveryNum] = useState("");
   const [ensuranceNumber, setEnsuranceNumber] = useState("");
-  const [companyFees, setCompanyFees] = useState("");
-  const [totalPrice, setTotalPrice] = useState("");
-  const [approvedPrice, setApprovedPrice] = useState("");
-  const [nonAdd, setNonAdd] = useState("");
-  const [enduranceRatio, setEnduranceRatio] = useState("");
-  const [nonAddForPerson, setNonAddForPerson] = useState("");
+  // const [companyFees, setCompanyFees] = useState("");
+  // const [totalPrice, setTotalPrice] = useState("");
+  // const [approvedPrice, setApprovedPrice] = useState("");
+  // const [nonAdd, setNonAdd] = useState("");
+  // const [enduranceRatio, setEnduranceRatio] = useState("");
+  // const [nonAddForPerson, setNonAddForPerson] = useState("");
   const [hospitalId, setHospitalId] = useState("");
   const [surgicalId, setSurgicalId] = useState("");
   const [phone, setPhone] = useState("");
@@ -45,15 +45,15 @@ const AddClaims = () => {
   const [error3, setError3] = useState();
   const [error4, setError4] = useState();
   const [error5, setError5] = useState();
-  const [message, setMessage] = useState();
+  // const [message, setMessage] = useState();
   const [hospital1, setHospital1] = useState();
   const [hospitalOut, setHospitalOut] = useState("");
   const handleChange3 = (event) => {
     setHospital(event.target.value);
   };
-  const handleChange33 = (event) => {
-    setHospital1(event.target.value);
-  };
+  // const handleChange33 = (event) => {
+  //   setHospital1(event.target.value);
+  // };
   const handleChange4 = (event) => {
     setSurgical(event.target.value);
   };
@@ -87,15 +87,15 @@ const AddClaims = () => {
     // تعيين التاريخ الحالي كقيمة لحقل الإدخال
     setDateTod(today);
   }, []);
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
   const inputRef1 = useRef(null);
   const inputRef2 = useRef(null);
   const inputRef3 = useRef(null);
   const inputRef4 = useRef(null);
   const inputRef5 = useRef(null);
   const inputRef6 = useRef(null);
-  const inputRef7 = useRef(null);
-  const inputRef8 = useRef(null);
+  // const inputRef7 = useRef(null);
+  // const inputRef8 = useRef(null);
   const inputRef9 = useRef(null);
 
   const handleLabelClick = (ref) => {

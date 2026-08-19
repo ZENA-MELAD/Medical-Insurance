@@ -6,8 +6,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import sitemap from "./../../config/siteMap.json";
 import { Button, Input, Form } from "antd";
 import axios from "axios";
-import { createAlert } from "components/Alert/Alert";
-import config from "Constants/environment";
+import { createAlert } from "../../components/Alert/Alert";
+import config from "../../Constants/environment";
 
 export default function BreadcrumbContext() {
   const { t } = useTranslation();

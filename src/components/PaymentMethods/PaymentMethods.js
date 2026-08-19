@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import config from "Constants/environment";
+import config from "../../Constants/environment";
 
 const PaymentMethods = (props) => {
   const [file, setFile] = useState();

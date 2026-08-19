@@ -1,7 +1,7 @@
 import { Table, Button, Modal } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import config from "Constants/environment";
+import config from "../../../Constants/environment";
 
 const AllRenewal = ({ personId ,name,last}) => {
   const [isModalVisible, setIsModalVisible] = useState(false);

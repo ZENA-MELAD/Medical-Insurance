@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import axios from "axios";
-import config from "Constants/environment";
-import PaymentMethods from "components/PaymentMethods/PaymentMethods";
-import Back from "components/Back/Back";
+import React from "react";
+// import axios from "axios";
+import config from "../../../Constants/environment";
+import PaymentMethods from "../../../components/PaymentMethods/PaymentMethods";
+import Back from "../../../components/Back/Back";
 
 const UploadSubscribes = () => {
 

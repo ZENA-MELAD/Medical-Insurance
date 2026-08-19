@@ -2,9 +2,9 @@ import { Button, Spin, Table } from "antd";
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlinePercentage } from "react-icons/ai";
 import { DeleteOutlined } from "@ant-design/icons";
-import { createAlert } from "components/Alert/Alert";
+import { createAlert } from "../../components/Alert/Alert.jsx";
 import axios from "axios";
-import config from "Constants/environment";
+import config from "../../Constants/environment";
 const EnduranceRatios = ({year,cardPrice}) => {
   const inputRef1 = useRef();
   const inputRef2 = useRef();

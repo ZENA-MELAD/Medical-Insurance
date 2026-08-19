@@ -1,5 +1,5 @@
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
 import { Button, Input, Popconfirm, Space, Table, Modal, Form, notification } from "antd";
 import React, { useState, useRef, useEffect } from "react";
 import {

@@ -1,14 +1,14 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import Arrow from "../../../Assets/Images/photo_2024-05-20_13-51-33.jpg";
-import { IoIosSearch } from "react-icons/io";
-import { PiPlusCircle } from "react-icons/pi";
-import usePost from "Custom Hooks/usePost";
-import config from "Constants/environment";
-import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+// import Arrow from "../../../Assets/Images/photo_2024-05-20_13-51-33.jpg";
+// import { IoIosSearch } from "react-icons/io";
+// import { PiPlusCircle } from "react-icons/pi";
+import usePost from "../../../Custom Hooks/usePost";
+import config from "../../../Constants/environment";
+// import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import useGet from "Custom Hooks/useGet";
 import { createAlert } from "components/Alert/Alert";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Back from "components/Back/Back";
 import Quiries from "components/Quiries/Quiries";
 
@@ -42,15 +42,15 @@ const EngineeringeDepars = () => {
     setName(event.target.value);
     setErrorMessage("");
   };
-  const handleChange5b = (event) => {
-    setDepart(event.target.value);
-  };
-  const handleLabelClick1 = () => {
-    if (inputRef1.current) {
-      inputRef1.current.focus();
-    }
-  };
-  const [data4, loading44] = useGet(config.engineeringedepars);
+  // const handleChange5b = (event) => {
+  //   setDepart(event.target.value);
+  // };
+  // const handleLabelClick1 = () => {
+  //   if (inputRef1.current) {
+  //     inputRef1.current.focus();
+  //   }
+  // };
+  // const [data4, loading44] = useGet(config.engineeringedepars);
   const [loagindkk, message, postFunc] = usePost(config.engineeringedepars, {
     name: name,
   });

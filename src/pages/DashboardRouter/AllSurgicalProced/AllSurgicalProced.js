@@ -1,6 +1,6 @@
 
-import config from "Constants/environment";
-import useGet from "Custom Hooks/useGet";
+import config from "../../../Constants/environment";
+import useGet from "../../../Custom Hooks/useGet";
 import {
   Button,
   Input,
@@ -10,7 +10,7 @@ import {
   Modal,
   Form,
   notification,
-  Select,
+ 
 } from "antd";
 import React, { useState, useEffect } from "react";
 import axios from "axios";

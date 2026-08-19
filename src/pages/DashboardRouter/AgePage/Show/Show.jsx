@@ -1,12 +1,12 @@
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import axios from "axios";
-import Back from "components/Back/Back";
-import config from "Constants/environment";
+// import Back from "components/Back/Back";
+import config from "../../../../Constants/environment";
 import { useEffect, useState } from "react";
 import { Spinner } from "components";
 import ActionModal from "components/ActionModal/ActionModal";
-import { create } from "@mui/material/styles/createTransitions";
+// import { create } from "@mui/material/styles/createTransitions";
 import { createAlert } from "components/Alert/Alert";
 
 const AgePage = () => {
@@ -116,7 +116,7 @@ const AgePage = () => {
       }
     };
 
-    if (year.length == 4) {
+    if (year.length === 4) {
       getAllDataForYear();
     }
   }, [year, reloadPage]);
@@ -227,7 +227,7 @@ const AgePage = () => {
                       ))}
                   </tbody>
                 </table>
-                {GetAllConfigData.ageSegments.length == 0 && (
+                {GetAllConfigData.ageSegments.length === 0 && (
                   <h5 className="w-full text-center bg-gray-200 p-2">
                     لا يوجد بيانات
                   </h5>
@@ -288,7 +288,7 @@ const AgePage = () => {
                       ))}
                   </tbody>
                 </table>
-                {GetAllConfigData.relationTypes.length == 0 && (
+                {GetAllConfigData.relationTypes.length === 0 && (
                   <h5 className="w-full text-center bg-gray-200 p-2">
                     لا يوجد بيانات
                   </h5>
@@ -356,7 +356,7 @@ const AgePage = () => {
                     ))}
                 </tbody>
               </table>
-              {GetAllHospitals.length == 0 && (
+              {GetAllHospitals.length === 0 && (
                 <h5 className="w-full text-center bg-gray-200 p-2">
                   لا يوجد بيانات
                 </h5>
@@ -459,12 +459,12 @@ const AgePage = () => {
 };
 
 export function EditAgeSegment({ dataGeter, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(dataGeter.id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(dataGeter.id !== 0 ? true : false);
   const [mdAgeSegments, setMdAgeSegments] = useState(dataGeter);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
-    if (dataGeter?.id != 0) {
+    if (dataGeter?.id !== 0) {
       setIsOpen(true);
       setMdAgeSegments(dataGeter);
     }
@@ -473,10 +473,10 @@ export function EditAgeSegment({ dataGeter, reloadPage }) {
   const handleSubmit = async () => {
     try {
       setOnSend(true);
-      const response = await axios.put(
-        `${config.baseUrl1}/AnnualData/UpdateAgeSegments`,
-        mdAgeSegments
-      );
+      // const response = await axios.put(
+      //   `${config.baseUrl1}/AnnualData/UpdateAgeSegments`,
+      //   mdAgeSegments
+      // );
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);
@@ -565,11 +565,11 @@ export function EditAgeSegment({ dataGeter, reloadPage }) {
   );
 }
 export function DeleteAgeSegment({ id, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(id !== 0 ? true : false);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
-    if (id != 0) {
+    if (id !== 0) {
       setIsOpen(true);
     }
   }, [id]);
@@ -577,9 +577,9 @@ export function DeleteAgeSegment({ id, reloadPage }) {
   const handleSubmit = async () => {
     try {
       setOnSend(true);
-      const response = await axios.delete(
-        `${config.baseUrl1}/AnnualData/DeleteAgeSegment/${id}`
-      );
+      // const response = await axios.delete(
+      //   `${config.baseUrl1}/AnnualData/DeleteAgeSegment/${id}`
+      // );
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);
@@ -612,12 +612,12 @@ export function DeleteAgeSegment({ id, reloadPage }) {
 }
 
 export function EditRelationTypes({ dataGeter, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(dataGeter.id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(dataGeter.id !== 0 ? true : false);
   const [mdRelationTypes, setRelationTypes] = useState(dataGeter);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
-    if (dataGeter?.id != 0) {
+    if (dataGeter?.id !== 0) {
       setIsOpen(true);
       setRelationTypes(dataGeter);
     }
@@ -626,10 +626,10 @@ export function EditRelationTypes({ dataGeter, reloadPage }) {
   const handleSubmit = async () => {
     try {
       setOnSend(true);
-      const response = await axios.put(
-        `${config.baseUrl1}/AnnualData/update-relation-type`,
-        mdRelationTypes
-      );
+      // const response = await axios.put(
+      //   `${config.baseUrl1}/AnnualData/update-relation-type`,
+      //   mdRelationTypes
+      // );
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);
@@ -680,11 +680,11 @@ export function EditRelationTypes({ dataGeter, reloadPage }) {
   );
 }
 export function DeleteRelationTypes({ id, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(id !== 0 ? true : false);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
-    if (id != 0) {
+    if (id !== 0) {
       setIsOpen(true);
     }
   }, [id]);
@@ -692,9 +692,9 @@ export function DeleteRelationTypes({ id, reloadPage }) {
   const handleSubmit = async () => {
     try {
       setOnSend(true);
-      const response = await axios.delete(
-        `${config.baseUrl1}/AnnualData/DeleteRelationType/${id}`
-      );
+      // const response = await axios.delete(
+      //   `${config.baseUrl1}/AnnualData/DeleteRelationType/${id}`
+      // );
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);
@@ -727,35 +727,35 @@ export function DeleteRelationTypes({ id, reloadPage }) {
 }
 
 export function EditHospitals({ dataGeter, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(dataGeter.id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(dataGeter.id !== 0 ? true : false);
   const [mdHospitals, setHospitals] = useState(dataGeter);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
     console.log(dataGeter);
 
-    if (dataGeter.hospitalId && dataGeter?.hospitalId != 0) {
+    if (dataGeter.hospitalId && dataGeter?.hospitalId !== 0) {
       setIsOpen(true);
       setHospitals({ ...dataGeter, id: dataGeter.hospitalId });
     }
   }, [dataGeter]);
 
   const handleSubmit = async () => {
-    const temp = {
-      address: mdHospitals.adress,
-      cityId: 1,
-      email: "",
-      enabled: false,
-      inside: true,
-      name: mdHospitals.hospitalName,
-      phone: mdHospitals.phone,
-    };
+    // const temp = {
+    //   address: mdHospitals.adress,
+    //   cityId: 1,
+    //   email: "",
+    //   enabled: false,
+    //   inside: true,
+    //   name: mdHospitals.hospitalName,
+    //   phone: mdHospitals.phone,
+    // };
     try {
       setOnSend(true);
-      const response = await axios.put(
-        `${config.baseUrl1}/Hospitals/${mdHospitals.hospitalId}`,
-        temp
-      );
+      // const response = await axios.put(
+      //   `${config.baseUrl1}/Hospitals/${mdHospitals.hospitalId}`,
+      //   temp
+      // );
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);
@@ -846,11 +846,11 @@ export function EditHospitals({ dataGeter, reloadPage }) {
   );
 }
 export function DeleteHospitals({ id, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(id !== 0 ? true : false);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
-    if (id != 0) {
+    if (id !== 0) {
       setIsOpen(true);
     }
   }, [id]);
@@ -858,7 +858,7 @@ export function DeleteHospitals({ id, reloadPage }) {
   const handleSubmit = async () => {
     try {
       setOnSend(true);
-      const response = await axios.delete(`${config.baseUrl1}/Hospitals/${id}`);
+      // const response = await axios.delete(`${config.baseUrl1}/Hospitals/${id}`);
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);
@@ -891,11 +891,11 @@ export function DeleteHospitals({ id, reloadPage }) {
 }
 
 export function DeleteSurgical({ id, reloadPage }) {
-  const [isOpen, setIsOpen] = useState(id != 0 ? true : false);
+  const [isOpen, setIsOpen] = useState(id !== 0 ? true : false);
   const [onSend, setOnSend] = useState(false);
 
   useEffect(() => {
-    if (id != 0) {
+    if (id !== 0) {
       setIsOpen(true);
     }
   }, [id]);
@@ -903,9 +903,9 @@ export function DeleteSurgical({ id, reloadPage }) {
   const handleSubmit = async () => {
     try {
       setOnSend(true);
-      const response = await axios.delete(
-        `${config.baseUrl1}/SurgicalProcedures/${id}`
-      );
+      // const response = await axios.delete(
+      //   `${config.baseUrl1}/SurgicalProcedures/${id}`
+      // );
       reloadPage(Math.floor(Math.random() * 101));
       setIsOpen(false);
       setOnSend(false);

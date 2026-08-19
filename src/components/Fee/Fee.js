@@ -2,7 +2,7 @@
 import { Button, Modal, Divider, Typography } from "antd"; // Ant Design imports
 import axios from "axios";
 import { createAlert } from "components/Alert/Alert";
-import config from "Constants/environment";
+import config from "../../Constants/environment";
 import React, { useEffect, useState } from "react";
 
 const { Title, Text } = Typography;

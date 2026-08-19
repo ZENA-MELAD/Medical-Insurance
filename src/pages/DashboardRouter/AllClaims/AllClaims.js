@@ -18,7 +18,7 @@ import {
   EditOutlined,
 } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
-import config from "Constants/environment";
+import config from "../../../Constants/environment";
 import useGet from "Custom Hooks/useGet";
 import moment from "moment";
 import BackButton from "components/BackButton/BackButton";
@@ -26,9 +26,9 @@ import BackButton from "components/BackButton/BackButton";
 const AllClaims = () => {
   const [data10, setData10] = useState([]);
   const [loadingR, setLoadingR] = useState(true);
-  const [data11, loading2] = useGet(config.surgicalprocedures);
-  const [data12, loading23] = useGet(config.hospitals);
-  const [data13, loading13] = useGet(config.persons);
+  const [data11] = useGet(config.surgicalprocedures);
+  const [data12] = useGet(config.hospitals);
+  const [data13] = useGet(config.persons);
   const [approvedSum, setApprovedSum] = useState();
   const [companySum, setCompanySum] = useState();
   const [count, setCount] = useState();
