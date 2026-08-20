@@ -1,10 +1,10 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import { Spinner, ThemeToggle } from "./components";
+import { Spinner } from "./components";
 // import Dashboard from "./pages/Dashboard/Dashboard";
-import { changeLanguage } from "./lang";
+// import { changeLanguage } from "./lang";
 // import Settings from "./pages/Settings/Settings";
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy } from "react";
 // import Testing_1 from "./pages/Testing/Testing_1";
 import { useSelector } from "react-redux";
 import Alert from "./components/Alert/Alert";
