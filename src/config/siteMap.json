@@ -1,0 +1,32 @@
+[
+  { "title": "الصفحة الرئيسية", "url": "/dashboard" },
+  { "title": "Home", "url": "/dashboard/home" },
+  { "title": "Settings", "url": "/dashboard/settings" },
+  { "title": "Settings-sssp", "url": "/dashboard/settings/sssp" },
+  { "title": "test", "url": "/dashboard/test-1" },
+  { "title": "البحث عن مشترك", "url": "/dashboard/search" },
+  { "title": "إضافة مشترك جديد", "url": "/dashboard/adduser" },
+  { "title": " عرض المشتركين", "url": "/dashboard/alleng" },
+  { "title": " الاشتراكات السنوية", "url": "/dashboard/addnew" },
+  { "title": " تجديد الاشتراك", "url": "/dashboard/renewal" },
+  { "title": "الوحدات الهندسية  ", "url": "/dashboard/unitworkplace" },
+  { "title": " أماكن العمل  ", "url": "/dashboard/workplaces" },
+  { "title": "الاقسام الهندسية", "url": "/dashboard/engdepars" },
+  { "title": "الاختصاصات الهندسية", "url": "/dashboard/specializatio" },
+
+  { "title": "المدن والمشافي", "url": "/dashboard/cityhospital" },
+  { "title": "الإجراءات المرضية", "url": "/dashboard/surgicalpro" },
+  { "title": "إعدادات السنة ", "url": "/dashboard/agepage" },
+  { "title": "  تحميل ملف الاستردادات  ", "url": "/dashboard/uploadclaims" },
+  { "title": "  تحميل ملف المطالبات  ", "url": "/dashboard/claims" },
+  { "title": " تحميل ملف كاش  ", "url": "/dashboard/uploadsubscribes" },
+  { "title": "تحميل ملف خزانةالتقاعد ", "url": "/dashboard/retexc" },
+  { "title": "تحميل ملف صندوق الاشتراك ", "url": "/dashboard/boxexc" },
+  { "title": "تحميل ملف يدوي ", "url": "/dashboard/uploadmanual" },
+  { "title": "تحميل ملف الوحدات هندسية ", "url": "/dashboard/uploadunits" },
+  { "title": "تحميل ملف المشافي ", "url": "/dashboard/uploadhospital" },
+  { "title": "  إضافة استرداد جديد ", "url": "/dashboard/addclaims" },
+  { "title": "  إضافة مطالبة جديدة ", "url": "/dashboard/manualclaims" },
+  { "title": "  الدراسات السنوية", "url": "/dashboard/annualstudy" }
+]
+
