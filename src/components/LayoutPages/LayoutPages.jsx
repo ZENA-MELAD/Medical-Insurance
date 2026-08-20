@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import BreadcrumbContext from "components/BreadcrumbContext/BreadcrumbContext";
+import BreadcrumbContext from "../../components/BreadcrumbContext/BreadcrumbContext";
 import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
-import { _lg_size, _md_size } from "config/layoutSizes";
-import { close, open, openHalf, openSmall } from "store/reducers/layoutReducer";
+import { _lg_size, _md_size } from "../../config/layoutSizes";
+import { close, open, openHalf, openSmall } from "../../store/reducers/layoutReducer";
 import "./LayoutPages.scss";
 
 export default function LayoutPages({ children }) {

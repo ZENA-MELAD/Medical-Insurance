@@ -4,7 +4,7 @@ import axios from "axios";
 // import Back from "components/Back/Back";
 import config from "../../../../Constants/environment";
 import { useEffect, useState } from "react";
-import { Spinner } from "../../../../components/Spinner/Spinner";
+import  Spinner  from "../../../../components/Spinner/Spinner";
 import ActionModal from "../../../../components/ActionModal/ActionModal";
 // import { create } from "@mui/material/styles/createTransitions";
 import { createAlert } from "../../../../components/Alert/Alert";
