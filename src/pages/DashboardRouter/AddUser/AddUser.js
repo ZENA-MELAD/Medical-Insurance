@@ -1209,7 +1209,7 @@ const AddUser = () => {
           )}
 
           <div className="flex justify-between p-2 w-full">
-            <div className="flex justify-center items-center bg-slate-600 shadow-md rounded-full w-1/3 py-0  h-10 md:w-1/4  lg:w-1/6">
+            <div className="flex justify-center items-center bg-slate-600 shadow-md rounded-full px-2  py-0  md:w-1/4  lg:w-1/6">
               <NavLink to="/dashboard/addmember" className="text-white">
                 إضافة فرد عائلة جديد
               </NavLink>

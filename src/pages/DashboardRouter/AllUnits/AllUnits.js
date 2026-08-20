@@ -264,7 +264,7 @@ const AllUnits = () => {
   };
 
   return (
-    <div className="bg-gray-100 h-full w-full p-1">
+    <div className="bg-gray-100  p-1">
       <BackButton/>
       <Table
         {...tableProps}

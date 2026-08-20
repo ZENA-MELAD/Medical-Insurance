@@ -248,7 +248,7 @@ if (!namepresident) {
             </label>
             <input
               type="text"
-              className="rounded-2xl p-2 mr-3 w-3/6 md:ml-1 md:mr-8"
+              className="rounded-2xl p-2  w-3/6 md:ml-1 md:mr-8"
               value={namepresident}
               onChange={handleChangeNameP}
               ref={inputRef1}
